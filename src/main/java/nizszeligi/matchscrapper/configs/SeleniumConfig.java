@@ -1,6 +1,5 @@
 package nizszeligi.matchscrapper.configs;
 
-import jakarta.annotation.PreDestroy;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,13 +33,6 @@ public class SeleniumConfig {
 
         browserOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         driver = new ChromeDriver(browserOptions);
-    }
-
-
-    @PreDestroy
-    public void dispose() {
-        log.info("Close driver");
-        driver.close();
     }
 
     private void findDriverInLocalWorkdir() {

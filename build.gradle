@@ -19,12 +19,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.seleniumhq.selenium:selenium-java:4.8.2'
-// implementation 'org.seleniumhq.selenium:selenium-support:4.8.2'
+//    implementation 'org.springframework.boot:spring-boot-starter-tomcat'
 
     implementation 'org.jsoup:jsoup:1.15.4'
-
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

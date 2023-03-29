@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class TeamResult {
+public class TeamRow {
     private int placeInTable;
     private String teamName;
     private int numberOfMatches;
@@ -13,5 +13,6 @@ public class TeamResult {
     private int wins;
     private int draws;
     private int lost;
-    private String goals;
+    private int scoredGoals;
+    private int lostGoals;
 }
